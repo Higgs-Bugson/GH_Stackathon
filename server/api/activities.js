@@ -18,3 +18,10 @@ router.get('/:userId', (req, res, next) => {
         .catch(next)
 })
 
+router.get('/:userId/:activityId', (req, res, next) => {
+    Activities.findAll({
+        include: [{ model: Membership, where: { userId: req.params.userId, activityId: req.params.activityId } }]
+    })
+        .then(activity => res.json(activity))
+        .catch(next)
+})
