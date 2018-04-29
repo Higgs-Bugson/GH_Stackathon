@@ -1,6 +1,7 @@
 body {
   font-family: sans-serif;
   background-image: url("/images/Memories.jpg");
+
 }
 
 a {
@@ -26,9 +27,9 @@ form div {
   float:left;
   position: relative;
   width: 40%;
-  padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+  padding-bottom : 25%; /* = width for a 1:1 aspect ratio */
   margin:1.66%;
-  background-color:rgba(38, 131, 230, 0.694);
+  background-color:rgba(205, 224, 245, 0.899);
   overflow:hidden;
 }
 
@@ -323,7 +324,15 @@ hr {
   grid-template-rows: 50% 50%;
 }
 
+.payment {
+ float: right;
+ font-size:14px;
+ padding:10px 24px;
+ border-radius: 12px;
+ border-color:rgb(243, 176, 135)
 
+
+}
 
 .user-item img  {
   height: 100px;

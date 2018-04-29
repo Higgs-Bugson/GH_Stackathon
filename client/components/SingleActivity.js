@@ -3,6 +3,8 @@ import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import store, { fetchSingleActivity } from '../store';
 import axios from 'axios'
+import Chart from './Chart'
+
 
 export class SingleActivity extends Component {
 
@@ -21,6 +23,8 @@ export class SingleActivity extends Component {
         console.log("this. props ", this.props)
 
 
+
+
         return (
 
 
@@ -28,40 +32,43 @@ export class SingleActivity extends Component {
                 <h3>Hello **Replace** USER </h3>
                 <h1>{this.props.activity.name}</h1>
                 <h4>{this.props.activity.description}</h4>
-                <div class="square">
-                    <div class="content">
-                        <div class="table">
-                            <div class="table-cell">
+                <div className="square">
+                    <div className="content">
+                        <div className="table">
+                            <div className="table-cell">
                                 <img src={this.props.activity.image} />
 
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="square">
-                    <div class="content">
-                        <div class="table">
-                            <div class="table-cell numbers">
-
+                <div className="square">
+                    <div className="content">
+                        <div className="table">
+                            <div className="table-cell numbers">
+                                <Chart />
+                                <div>
+                                    <button className="payment">Make Payment</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="square">
-                    <div class="content">
-                        <div class="table">
-                            <div class="table-cell numbers">
-                                3.9/5
+                <div className="square">
+                    <div className="content">
+                        <div className="table">
+                            <div className="table-cell numbers">
+                                Members:
                 </div>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="square">
-                    <div class="content">
-                        <div class="table">
-                            <div class="table-cell">
+                <div className="square">
+                    <div className="content">
+                        <div className="table">
+                            <div className="table-cell">
 
                                 Responsive image.
                 </div>
