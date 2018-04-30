@@ -3,7 +3,7 @@ import { withRouter, Route, Switch, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import store, { me } from '../store';
-import { SingleActivity, PersonalPage, Home, UserHome, Navbar, Login } from './index.js';
+import { SingleActivity, PersonalPage, Home, UserHome, Navbar, Login, Signup } from './index.js';
 
 
 class Main extends Component {
@@ -26,6 +26,8 @@ class Main extends Component {
                         <Route exact path="/" component={Home} />
                         <Route path="/activities/:userId/:activityId" component={SingleActivity} />
                         <Route path="/activities/:userId/" component={PersonalPage} />
+                        <Route exact path="/login" component={Login} />
+                        <Route exact path="/signup" component={Signup} />
                         {
                             isLoggedIn &&
                             <Switch>

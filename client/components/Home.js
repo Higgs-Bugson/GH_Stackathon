@@ -8,6 +8,11 @@ const Home = ({ handleClick, isLoggedIn }) => (
   <div id="start-logo">
     <div>
       <h1>Plant your adventure</h1>
+      <hr />
+      <br />
+      <br />
+      <h5> Think about the experience, not the bills</h5>
+
     </div>
 
     <nav >

@@ -16,7 +16,7 @@ const activities = [
         name: 'Bahamas Trip',
         category: "Nick's Birthday",
         description: "Celebrate Nick's Birthday in the bahamas with all his friends",
-        image: "http://cache.marriott.com/Images/EventsandMeetings/Weddings/Weddings%20SEO/Main%20Page/weddingmain-12unit-SH-2.1.jpg"
+        image: "https://i.pinimg.com/236x/d0/7d/41/d07d414e1486143922a0733eabbcd135--birthday-sayings-happy-birthday-images.jpg"
     },
     {
         status: 'Completed',
@@ -113,10 +113,10 @@ function generateUsers() {
         isAdmin: true
     }));
     users.push(User.build({
-        name: 'Kate Humphrey',
+        name: 'Tania Santamaria',
         photo: toonAvatar.generate_avatar({ gender: 'female' }),
-        phone: '(555) 623-7878',
-        email: 'kate@kate.kate',
+        phone: '(555) 555-5555',
+        email: 't@t.t',
         password: '123',
         isAdmin: true
     }));
@@ -138,43 +138,43 @@ const memberships = [
         total: 350,
         deadline: "2018-07-17T00:00:00.000Z",
         activityId: 1,
-        userId: 1
+        userId: 103
     },
     {
         total: 350,
         deadline: "2018-07-17T00:00:00.000Z",
         activityId: 1,
-        userId: 2
+        userId: 102
     },
     {
         total: 350,
         deadline: "2018-07-17T00:00:00.000Z",
         activityId: 1,
-        userId: 3
+        userId: 101
     },
     {
         total: 100,
         deadline: "2018-08-17T00:00:00.000Z",
         activityId: 2,
-        userId: 1
+        userId: 103
     },
     {
         total: 100,
         deadline: "2018-08-17T00:00:00.000Z",
         activityId: 2,
-        userId: 2
+        userId: 102
     },
     {
         total: 35,
         deadline: "2018-08-17T00:00:00.000Z",
         activityId: 3,
-        userId: 1
+        userId: 101
     },
     {
         total: 35,
         deadline: "2018-05-23T00:00:00.000Z",
         activityId: 3,
-        userId: 2
+        userId: 103
     }
 ]
 

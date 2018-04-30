@@ -23,6 +23,8 @@ Activities.belongsToMany(User, { through: Membership });
 User.belongsToMany(Activities, { through: Membership });
 Activities.hasMany(Membership)
 User.hasMany(Membership)
+// Membership.hasMany(Activities)
+// Membership.hasMany(User)
 
 
 // Activities.belongsToMany(User, { as: 'group', through: Membership, foreignKey: 'activityId' });

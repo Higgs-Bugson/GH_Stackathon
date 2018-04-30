@@ -25,3 +25,21 @@ router.get('/:userId/:activityId', (req, res, next) => {
         .then(activity => res.json(activity))
         .catch(next)
 })
+
+//users needed for the membership
+router.get('/users/member/:activityId', (req, res, next) => {
+    User.findAll({
+        include: [{ model: Membership, where: { activityId: req.params.activityId } }]
+    })
+        .then(activity => res.json(activity))
+        .catch(next)
+})
+
+//membership
+router.get('/users/member/membership/:activityId', (req, res, next) => {
+    Membership.findAll({
+        where: { activityId: req.params.activityId }
+    })
+        .then(activity => res.json(activity))
+        .catch(next)
+})

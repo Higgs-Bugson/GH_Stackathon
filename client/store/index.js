@@ -5,9 +5,10 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 import user from './user'
 import activities from './activities'
 import activity from './activity'
+import { web3, validNetwork, account, contract } from 'web3-state-manager'
 
 
-const reducer = combineReducers({ user, activities, activity })
+const reducer = combineReducers({ user, activities, activity, web3, validNetwork, account, contract })
 const middleware = composeWithDevTools(applyMiddleware(
   thunkMiddleware,
   createLogger({ collapsed: true })
